@@ -1,7 +1,10 @@
 import React from 'react'
 import { Zoom } from "react-awesome-reveal";
+import { useTranslation } from 'react-i18next';
 
 function HelloWorld() {
+
+  const {t} = useTranslation()
   
   return (
     <div className="hero min-h-screen bg-fixed bg-center bg-no-repeat" style={{ backgroundImage: `url("https://static.vecteezy.com/system/resources/previews/003/549/556/original/space-galaxy-background-free-vector.jpg")` }}>
@@ -10,7 +13,7 @@ function HelloWorld() {
     <div className="max-w-md">
       <Zoom>
       <h1 className="mb-5 text-5xl font-bold">Hello World</h1>
-      <p className="mb-5 text-3xl">as a full stack junior software engineer  with experience in <strong>web</strong> and mobile development, I am dedicated to solving complex problems and sharing my knowledge with others.</p>
+      <p className="mb-5 text-3xl">{t("asAFullstack")}</p>
       </Zoom>
     </div>
   </div>

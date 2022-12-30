@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 const images = [
   "ZHBwdrv8aCc",
   "DHph0kuNf-s",
@@ -8,10 +9,12 @@ const images = [
   "IPo2T6RGuaQ",
 ];
 function ShortVids() {
+  const {t} = useTranslation()
+
   const [vidURl, setVidUrl] = useState(null);
   return (
     <div className="container mx-auto  mt-5 mb-5">
-            <h1 className="text-center text-4xl pt-5">Some of my Shortvids</h1>
+            <h1 className="text-center text-4xl pt-5">{t("someOfMyShortVids")}</h1>
       <div className="grid-cols-3 p-10 space-y-2 lg:space-y-0 lg:grid lg:gap-3 lg:grid-rows-3 rounded">
         {images.map((image, index) => (
           <div
@@ -55,7 +58,7 @@ function ShortVids() {
               className="btn"
               onClick={() => setVidUrl(null)}
             >
-              nice!
+              {t("nice")}
             </label>
           </div>
         </div>

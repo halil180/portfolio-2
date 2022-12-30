@@ -1,39 +1,30 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 function AboutMe() {
+  const {t} = useTranslation()
+
   return (
     <div className="hero min-h-screen bg-base-200 flex justify-center items-center ">
       <div className="hero-content text-center">
         <div >
-          <h1 className="text-5xl font-bold">About me</h1>
+          <h1 className="text-5xl font-bold">{t("aboutMe")}</h1>
           <p className="py-6 text-2xl text-center">
-            As an ambitious and hard-working engineer with experience in full
-            stack web development, I am dedicated to creating high-quality
-            solutions and continuously improving my skills. With a strong
-            foundation in front-end development and experience in mobile app
-            development, I have a passion for software and technology and am
-            committed to staying up-to-date with the latest best practices. In
-            my spare time, I volunteer at HiCoders, where I create educational
-            videos and prepare homework assignments to help participants succeed
-            in their studies. I am always looking for opportunities to learn and
-            grow, and I hope to use my skills to make a positive impact in the
-            field.
+            {t("moreAboutMe")}
           </p>
 
           <div className="stats stats-vertical lg:stats-horizontal shadow text-3xl">
             <div className="stat ">
-              <div className="stat-title">Software DEV.</div>
+              <div className="stat-title">{t("SoftwareDev")}</div>
               <div className="stat-value">
                 <span className="text-yellow-200">JS</span> ,
                 <span className="text-blue-500">TS</span>,PY
               </div>
-              <div className="stat-desc">
-                Experienced in Functional <br /> programming{" "}
-              </div>
+       
             </div>
 
             <div className="stat">
-              <div className="stat-title">Frontend Dev</div>
+              <div className="stat-title">{t("FrontendDev")}.</div>
               <div className="stat-value flex flex-row  justify-between">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -92,11 +83,10 @@ function AboutMe() {
                   />
                 </svg>
               </div>
-              <div className="stat-desc">↗︎ 400 (22%)</div>
             </div>
 
             <div className="stat">
-              <div className="stat-title">Backend Dev</div>
+              <div className="stat-title">{t("BackendDev")}.</div>
               <div className="stat-value flex flex-row justify-between">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +276,6 @@ function AboutMe() {
                   />
                 </svg>
               </div>
-              <div className="stat-desc">↘︎ 90 (14%)</div>
             </div>
           </div>
         </div>

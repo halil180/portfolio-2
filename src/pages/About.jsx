@@ -4,12 +4,11 @@ import Career from "../components/Career";
 import HelloWorld from "../components/HelloWorld";
 
 function About() {
-
   return (
     <>
-    <HelloWorld />
-<AboutMe/>
-<Career/>
+      <HelloWorld />
+      <AboutMe />
+      <Career />
     </>
   );
 }

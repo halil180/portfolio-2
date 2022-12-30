@@ -1,0 +1,29 @@
+
+{
+    "HiThere":"Hi there",
+    "ThatsMe":"I'm Halil Kömürcü, I'm a Fullstack Developer",
+    "aboutMe":"About me",
+    "mobileApps":"Mobile Apps",
+    "someOfMyShortVids":"Some of my Shortvids",
+    "getInTouch":"GET IN TOUCH",
+    "gotAQuestion":"Got a question or proposal, or just want to say hello? Go ahead.",
+    "message":"message",
+    "writeYourMessage":"write your message here",
+    "submit":"submit",
+    "juniorFullstack":"Junior Fullstack Developer",
+    "nice":"nice!",
+    "about":"about",
+    "language":"language",
+
+
+    "asAFullstack":"as a junior software developer with experience in web and mobile development,I am passionate about finding solutions to difficult problems and sharing my expertise with others..",
+    "moreAboutMe":"I am dedicated to creating high-quality solutions and continuously improving my skills. With a strong foundation in front-end development and experience in mobile app development, I have a passion for software and technology and am committed to staying up-to-date with the latest best practices. In my spare time, I volunteer at HiCoders, where I create educational videos and prepare homework assignments to help participants succeed in their studies. I am always looking for opportunities to learn and grow, and I hope to use my skills to make a positive impact in the field.",
+    "myCareer":"My career as a Programmer",
+    "volunteer":"Volunteer at NGG",
+    "paserelle":"Bern University of Applied Sciences Paserelle",
+    "intern":"intern at Designbees.ch",
+    "BernUni":"Bern University of Applied Sciences It",
+    "SoftwareDev":"Software Dev.",
+    "FrontendDev":"Frontend Dev",
+    "BackendDev":"Backend Dev"
+}

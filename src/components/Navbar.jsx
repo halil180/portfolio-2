@@ -1,10 +1,16 @@
 import React, { useEffect } from "react";
+import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 import { Link, Outlet } from "react-router-dom";
 import { themeChange } from "theme-change";
+import { LanguageContext } from "../context/LanguageContext";
 import Footer from "./Footer";
 import ThemeToggle from "./ThemeToggle";
 
 function Navbar() {
+  const { t, i18n } = useTranslation();
+  const {changeLang} = useContext(LanguageContext)
+
   useEffect(() => {
     themeChange(false);
     // 👆 false parameter is required for react project
@@ -26,7 +32,7 @@ function Navbar() {
             </li>
             <li tabIndex={0} className="z-10	">
               <a>
-                language
+                {t("language")}
                 <svg
                   className="fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,18 +45,18 @@ function Navbar() {
               </a>
               <ul className="p-2 bg-base-100">
                 <li>
-                  <a>English</a>
+                  <button onClick={() => changeLang("en")}>English</button>
                 </li>
                 <li>
-                  <a>Deutsch</a>
+                  <button onClick={() => changeLang("de")}>Deutsch</button>
                 </li>
                 <li>
-                  <a>Francais</a>
+                  <button onClick={() => changeLang("fr")}>Français</button>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="about">About</Link>
+              <Link to="about">{t("about")}</Link>
             </li>
           </ul>
         </div>

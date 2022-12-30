@@ -1,13 +1,16 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+  const { t, i18n } = useTranslation();
+
   return (
 <footer className="footer footer-center p-10 bg-primary text-primary-content">
   <div>
     <p className="font-bold">
       Halil Kömürcü
     </p> 
-    <p>Junior Fullstack Developer</p>
+    <p>{t("juniorFullstack")}</p>
   </div> 
   <div>
     <div className="grid grid-flow-col gap-4">
