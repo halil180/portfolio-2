@@ -13,7 +13,7 @@ function HelloWorld() {
     <div className="max-w-md">
       <Zoom>
       <h1 className="mb-5 text-5xl font-bold">Hello World</h1>
-      <p className="mb-5 text-3xl">{t("asAFullstack")}</p>
+      <p className="mb-5 text-2xl">{t("asAFullstack")}</p>
       </Zoom>
     </div>
   </div>

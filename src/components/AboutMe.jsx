@@ -25,7 +25,7 @@ function AboutMe() {
 
             <div className="stat">
               <div className="stat-title">{t("FrontendDev")}.</div>
-              <div className="stat-value flex flex-row  justify-between">
+              <div className="stat-value flex flex-row  justify-around">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -87,7 +87,7 @@ function AboutMe() {
 
             <div className="stat">
               <div className="stat-title">{t("BackendDev")}.</div>
-              <div className="stat-value flex flex-row justify-between">
+              <div className="stat-value flex flex-row justify-around">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="0.73em"

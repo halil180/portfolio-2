@@ -37,7 +37,7 @@ function MobileApps() {
 
       <div className="flex flex-wrap justify-center  ">
         {apps.map((app) => (
-          <div className={`mockup-phone border-red-500 m-41 `} key={app.id}>
+          <div className="mockup-phone border-red-500 m-2" key={app.id}>
               <Fade cascade>
             <div className="camera " ></div>
             <div className="display">

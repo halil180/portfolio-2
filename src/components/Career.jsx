@@ -8,7 +8,7 @@ function Career() {
     <div className="hero min-h-screen bg-base-500">
     <div className="hero-content text-center">
       <div className="max-w-md">
-        <h1 className="text-5xl font-bold m-2">{t("myCareer")}</h1>
+        <h1 className="text-4xl font-bold m-2">{t("myCareer")}</h1>
         <Fade cascade>
         <ul className="steps steps-vertical ">
           <li className="step step-primary z-50">08.2021 - 06.2022 HiCoders </li>

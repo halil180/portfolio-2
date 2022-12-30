@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 function Navigations() {
   return (
     <LanguageContextProvider>
-    <Navbar></Navbar>
+    <Navbar/>
     </LanguageContextProvider>
   )
 }
